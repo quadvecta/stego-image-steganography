@@ -1,0 +1,6 @@
+# Existing application dependencies. Use the project's supported versions if known.
+numpy
+opencv-python
+cryptography
+# Optional logo rendering and QA screenshots; the application has a vector fallback.
+Pillow

@@ -1,6 +1,7 @@
 # STEGO v1.01
+Python desktop app for encrypting, embedding, and recovering messages in images using LSB steganography.
 
-Maintenance release of the supplied Tkinter application. No AI service, telemetry,
+No AI service (For Now), telemetry,
 runtime downloads, or new network integration was added.
 
 ## Run
@@ -35,6 +36,27 @@ Verified Linux combinations:
 Verification used the `opencv-python-headless` distribution because the application
 uses Tk, not OpenCV HighGUI, for its interface. These versions describe tests, not
 a recommendation to downgrade security dependencies.
+
+## UI Screenshots
+### 1. Homescreen:
+<img width="823" height="592" alt="Screenshot_20261025_104559" src="https://github.com/user-attachments/assets/bae0e690-87f7-4214-ad2f-8821ab40fd93" />
+
+---
+
+### 2. Encode Screen:
+  <img width="733" height="592" alt="image" src="https://github.com/user-attachments/assets/03cf8d79-0643-440a-9077-a4c3b2ca4786" />
+
+---
+
+### 3. Decode Screen:
+<img width="730" height="590" alt="image" src="https://github.com/user-attachments/assets/27c1446e-d610-41e4-8986-b4c8654097b1" />
+
+---
+
+### 4. Heatmap instance:
+   <img width="691" height="584" alt="image" src="https://github.com/user-attachments/assets/3aece055-e56e-4157-a6b8-5fc9740dad8a" />
+
+---
 
 ## Test
 
@@ -80,7 +102,6 @@ Read `CHANGE_REPORT.md` for defects, exact test commands, results, limitations a
 Linux/Windows manual QA. `source-changes.patch` is the complete Python source diff.
 The browser-friendly summary is delivered separately as `stego-report.html`.
 
-No Windows/macOS native tests, PyInstaller build, executable, or ELF release is
-claimed. Windows/macOS use standard parent-aware Tk native dialogs; Linux selects
-one installed Zenity/KDialog backend or uses Tk. Desktop portal behavior still
-needs checking on the target desktop.
+No macOS native tests, PyInstaller build, executable, or ELF release is
+claimed.macOS use standard parent-aware Tk native dialogs; Linux selects
+one installed Zenity/KDialog backend or uses Tk. 
